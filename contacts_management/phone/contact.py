@@ -1,6 +1,5 @@
 class Contact:
-
-    """
+      """
     Atributos:
     datos: Lista que contiene los valores de los atributos del contacto (nombre, apellido, organización, teléfono, dirección).
     
@@ -9,15 +8,13 @@ class Contact:
     obtener_datos: Retorna la lista con los datos del contacto.
 
     """
-
-    def __init__(self, nombre, apellido, organizacion, telefono, direccion):
-        self.nombre = nombre
-        self.apellido = apellido
-        self.organizacion = organizacion
-        self.telefono = telefono
-        self.direccion = direccion
+    
+    def __init__(self, first_name, last_name, organization, phone, address):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.organization = organization
+        self.phone = phone
+        self.address = address
 
     def get_data(self):
-        # Devuelve los atributos del contacto como una lista
-        return [self.nombre, self.apellido, self.organizacion, self.telefono, self.direccion]
-
+        return [self.first_name, self.last_name, self.organization, self.phone, self.address]
